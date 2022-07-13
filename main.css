@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; }
-
+#ofertadia {
+    width: 100%;
+    height: 80vh;
+}
 #list-day {
     display: flex;
     align-items: center;
@@ -10,6 +13,7 @@
     width: 100%;
     height: 80vh;
     background-color:#007991 ;
+    padding: 0;
 }
 #lista{
     
@@ -21,18 +25,28 @@
         background: #ffffff;
         border-radius: 3rem;
         padding: 2.5rem;
-        margin: 1rem;
+       
         box-shadow: 2px 0px 17px 2px rgba(0, 0, 0, 0.3);
-        position: relative; 
+        /* position: relative;  */
        
 }
 
 
 .oferta {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     
 }
 #image {
     width: 40%;
     height: 40%;
+}
+.butt{
+background: #439A86;
+font-weight: 500;
+font-size: 1.5rem;
+text-transform: uppercase;
+border: none;
+border-radius: 1rem;
+padding: 1rem ;
+/* margin-top: 2.5rem;  */
 }
