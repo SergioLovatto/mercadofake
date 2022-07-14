@@ -4,7 +4,7 @@ const listday = document.getElementById('listform')
 
 window.addEventListener('load', async (event) => {
     event.preventDefault ()
-    // const ul = document.getElementById('list-day')
+    
     let data = []
     let finaldata = []
     let respuesta = await fetch(url1)
@@ -22,8 +22,8 @@ window.addEventListener('load', async (event) => {
 
     const url2 = 'https://fakestoreapi.com/products'
             
-    // const ul = document.createElement('ul')
-     const datos = JSON.parse(localStorage.getItem('datos'))
+    
+    const datos = JSON.parse(localStorage.getItem('datos'))
     
      const getdata = () => {
         
@@ -35,19 +35,28 @@ window.addEventListener('load', async (event) => {
              console.log(datos)
          getdata()
    
-    //     if (datos.length){
-    //         datos.map( item => {
-    //             const li = document.createElement('li')
-    //             const img = document.createElement('img')
-    //             const span = document.createElement('span')
-    //             span1.appendChild(document.createTextNode(finaldata.name))
-    //             span2.appendChild(document.createTextNode(finaldata.price +"$"))
-    //             img.src= datos.imagen
-    //             li.appendChild(img)
-    //             li.appendChild(span)
-    //             ul.appendChild(li)
-    //             datos.appendChild(ul)
-    //         })
-    //     }
+              const contenedor =  document.getElementById('productos')
+              let x = 0
+              function crearproducto(producto) {
+              
+                
+                 const items = document.createElement('li')
+                 const imagen = document.createElement('img')
+                 const title = document.createElement('h3')
+                 const price = document.createElement('span')
+                 imagen.src = datos[x].image 
+                title.textContent = datos[x].name
+                price.textContent = datos[x].price
+                 items.appendChild(imagen)
+                 items.appendChild(title)
+                 items.appendChild(price)
+                 contenedor.appendChild(items)
+                x=x+1
+            
+              }
+              datos.forEach(crearproducto)
+
+      
+
 
 })
