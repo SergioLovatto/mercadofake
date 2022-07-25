@@ -158,7 +158,7 @@ padding: 1rem ;
     width: 100%;
 }
 
-.category_list #category_item{
+.category_list .category_item{
     display: block;
     width: 80%;
     margin: 1rem;
@@ -172,3 +172,5 @@ padding: 1rem ;
 .category_list .itemactive {
    background-color:  #E9D985
 }
+
+
