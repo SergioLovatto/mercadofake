@@ -6,8 +6,13 @@
     <link rel="stylesheet" href="./main.css">
     <script src="./main.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-   
+    <script src="https://kit.fontawesome.com/96e4c6db82.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;700;900&family=Lobster+Two&display=swap"
+    rel="stylesheet">
     <title>Mercado Fake</title>
 </head>
 <body>
@@ -59,13 +64,101 @@
       </div>
     </section>
     
-    <!-- <section id="products">
-
-        <div id="list-products">
-            <ul id="productos"></ul>
+    <section class="contenedor">
+      <div class="iconos">
+        <div class="icono">
+          <i class="fa-solid fa-truck-fast icono__i"></i>
+          <h3 class=" icono__titulo">Envío gratis a todo el país</h3>
+          <p class="icono__texto">Brindamos seguimiento de tus compra,
+            por lo que podés tener la certeza de que va a llegar a la dirección elegida.</p>
         </div>
-    </section> -->
-    
+        <div class="icono">
+          <i class="fa-solid fa-credit-card icono__i"></i>
+          <h3 class="icono__titulo">Métodos de pago</h3>
+          <p class="icono__texto">Trabajamos con Mercado Pago, transferencias bancarias y con tarjetas de crédito, débito
+            y
+            prepagas! </p>
+        </div>
+        <div class="icono">
+          <i class="fa-solid fa-arrow-right-arrow-left icono__i"></i>
+          <h3 class="icono__titulo">Garantizamos calidad</h3>
+          <p class="icono__texto">¿No estás conforme con la calidad del producto?
+            No te preocupes, te reponemos el producto o te devolvemos el dinero.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="newsletter">
+      <div class="newsletter__contenedor">
+        <div class="newsletter__texto">
+          <h3 class="newsletter__h3">Suscríbete para participar de increíbles sorteos!</h3>
+          <p class="newsletter__p">
+            Todas las semanas sorteamos cupones de descuento de hasta un 50%,
+            también participas por un par de zapatillas a tu elección!
+          </p>
+        </div>
+        <form class="newsletter__form ">
+          <div class="newsletter__div">
+            <input class="newsletter__input" type="email" id="newsletter" required><span class="newsletter__barra"></span>
+            <label class="newsletter__label" for="newsletter">Email</label>
+          </div>
+          <button class="newsletter__button" type="submit">Suscribirme</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer" id="footer">
+      <div class="footer__contenedor">
+        <div class="footer__contacto">
+  
+          <h3 class="footer__h3">Contacto</h3>
+          <p class="footer__p"><span class="footer__span">Dirección: </span>Av. del Libertador 101, B1638 Vicente López,
+            Provincia de Buenos Aires</p>
+          <p class="footer__p"><span class="footer__span">Teléfono: </span>01147440564</p>
+          <p class="footer__p"><span class="footer__span">Horarios: </span>Lun - Vie de 09:00 a 18:00</p>
+        </div>
+        <div class="footer__cuenta">
+          <h3 class="footer__h3">Mi cuenta</h3>
+          <a class="footer__p footer__p--enlace" href="#login">Iniciar sesión</a>
+          <a class="footer__p footer__p--enlace" href="/paginas/carrito.html">Ver carrito</a>
+          <p class="footer__p" href="">Ayuda</p>
+        </div>
+        <div class="footer__acerca">
+          <h3 class="footer__h3">Acerca de</h3>
+          <p class="footer__p" href="">Quienes somos</p>
+          <p class="footer__p" href="">Informacion de envíos</p>
+          <p class="footer__p" href="">Políticas de privacidad</p>
+          <p class="footer__p" href="">Términos y condiciones</p>
+          <a class="footer__p footer__p--enlace" href="/paginas/contacto.html">Contáctanos</a>
+        </div>
+        <div class="footer__redes">
+          <h3 class="footer__h3">Síguenos</h3>
+          <div class="footer__redes-box">
+            <div class="instagram">
+              <a class="footer__redes-link" href="#footer"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="facebook">
+              <a class="footer__redes-link" href="#footer"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+            <div class="twitter">
+              <a class="footer__redes-link" href="#footer"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+            <div class="pinterest">
+              <a class="footer__redes-link" href="#footer"><i class="fa-brands fa-pinterest-p"></i></a>
+            </div>
+            <div class="tiktok">
+              <a class="footer__redes-link" href="#footer"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="youtube">
+              <a class="footer__redes-link" href="#footer"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <p class="footer__final ">Sitio diseñado por <a class="footer__autor" href="https://github.com/sergiolovatto"
+          target="_blank">Sergio Lovatto</a>
+      </p>
+    </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>

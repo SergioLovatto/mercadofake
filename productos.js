@@ -94,7 +94,7 @@ function seleccion (button, display) {
  }
 
  function mostrartodo (display,button){
-  console.log(datos)
+  
   let x = 0
   const contenedor =  document.getElementById('productos')
   for(i=0; i< datos.length; i++){
@@ -119,7 +119,7 @@ function hombre (display,button) {
   let x = 0
   let men = datos.filter(datos => datos.category === "men's clothing")
   const contenedor =  document.getElementById('productos')
-  console.log(men)
+
   for (i = 0; i < men.length; i++) {
     const items = document.createElement('li')
     const imagen = document.createElement('img')
@@ -143,7 +143,7 @@ function mujer (display,button) {
   let x = 0
   let women = datos.filter(datos => datos.category === "women's clothing")
   const contenedor =  document.getElementById('productos')
-  console.log(women)
+ 
   for (i = 0; i < women.length; i++) {
     const items = document.createElement('li')
     const imagen = document.createElement('img')
@@ -167,7 +167,7 @@ function joya (display,button) {
   let x = 0
   let joyas = datos.filter(datos => datos.category === "jewelery")
   const contenedor =  document.getElementById('productos')
-  console.log(joyas)
+ 
   for (i = 0; i < joyas.length; i++) {
     const items = document.createElement('li')
     const imagen = document.createElement('img')
@@ -191,7 +191,7 @@ function electronica (display,button) {
   let x = 0
   let electr = datos.filter(datos => datos.category === "electronics")
   const contenedor =  document.getElementById('productos')
-  console.log(electr)
+
   for (i = 0; i < electr.length; i++) {
     const items = document.createElement('li')
     const imagen = document.createElement('img')
