@@ -149,6 +149,9 @@ padding: 1rem ;
   
     display:block;
   }
+  #list-day {
+    justify-content: space-between;
+  }
 }
 
 
