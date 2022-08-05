@@ -170,17 +170,29 @@ padding: 1rem ;
 .category_list {
    
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+  
 }
 
 .category_list .category_item{
-    display: block;
-    width: 80%;
-    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+     margin: 0.5rem; 
     background-color: #222E50;
     text-decoration: none;
     text-align: center;
     color: antiquewhite;
     border-radius: 50px;
+    font-weight: 500;
+font-size: 1.5rem;
+text-transform: uppercase;
 }
 
 .category_list .itemactive {
@@ -239,8 +251,7 @@ padding: 1rem ;
       to bottom,
       rgba(0, 0, 0, 0.897) 0,
       rgba(0, 0, 0, 0.986)
-    ),
-    url(img/nike-5126389_1920.webp);
+    );
   background-position: center, center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -398,6 +409,7 @@ padding: 1rem ;
   position: relative;
   display: block;
   margin-bottom: 2rem;
+ 
 }
 
 .footer__h3::after {
@@ -432,7 +444,7 @@ padding: 1rem ;
 .footer__redes-link {
   color: var(--blanco);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   transition: all 0.3s ease;
 }
 .footer__redes-link:hover {
@@ -447,3 +459,4 @@ padding: 1rem ;
   text-decoration: none;
   color: var(--principal);
 }
+
